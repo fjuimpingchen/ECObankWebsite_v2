@@ -30,6 +30,8 @@
         <img src="地球智能投資圖片/流程（右上角）/流程透明度 中-4.png" width="150%" style="margin-right: 10em;margin-top: -1.5em;">
     </div>
 
+    <img src="地球智能投資圖片/robot_judy.png" style="float: left; z-index: -100; margin-top: 2em;" width="5%"> 
+
     <div class="wrapper3">
         <h1 style="text-align: left; color: #38566A; font-size: 18pt;">確認投資內容</h1>
     </div>
@@ -88,7 +90,7 @@
                 <form style="font-size: 13pt;">
                     <blockquote>
                         <p>停利停損通知點</p>
-                        停利停損：± <span class="showPercent"></span> ％
+                        停利停損：± 10 ％
                     </blockquote>
                 </form>
             </div>
@@ -99,7 +101,7 @@
                 <form style="font-size: 13pt;">
                     <blockquote>
                         <p>個人風險屬性</p>
-                        <p>積極型</p>
+                        <p>穩健型</p>
                     </blockquote>
                 </form>
             </div>
@@ -177,12 +179,6 @@
             }
             showiMoney();
 
-            function showPercent() {
-                let nameDom = document.querySelector('.showPercent')
-                nameDom.innerHTML = localStorage.getItem('Percent')
-            }
-            showPercent();
-
             function showChoose() {
                 let nameDom = document.querySelector('.showChoose')
                 nameDom.innerHTML = localStorage.getItem('g1')
@@ -194,15 +190,15 @@
 
         <script>
 
-            document.getElementById("inputName").value = localStorage.getItem("Name");
-            document.getElementById("inputMoney").value = localStorage.getItem("Money");
-            document.getElementById("inputTime").value = localStorage.getItem("Time");
+            // document.getElementById("inputName").value = localStorage.getItem("Name");
+            // document.getElementById("inputMoney").value = localStorage.getItem("Money");
+            // document.getElementById("inputTime").value = localStorage.getItem("Time");
             document.getElementById("inputiMoney").value = localStorage.getItem("iMoney");
             document.getElementById("inputPercent").value = localStorage.getItem("Percent");
 
-            var str = localStorage.getItem('Name');
-            var str2 = localStorage.getItem('Money');
-            var str3 = localStorage.getItem('Time');
+            // var str = localStorage.getItem('Name');
+            // var str2 = localStorage.getItem('Money');
+            // var str3 = localStorage.getItem('Time');
             var str4 = localStorage.getItem('iMoney');
             var str5 = localStorage.getItem('Percent');
 

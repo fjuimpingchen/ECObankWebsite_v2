@@ -27,10 +27,10 @@
         </div>
         <div></div>
         <div></div>
-        <img src="永續智能投資圖片/流程（右上角）/流程透明度 中-4.png" width="150%" style="margin-right: 10em;margin-top: -1.5em;">
+        <img src="永續智能投資圖片/流程（右上角）/流程透明度 低-4.png" width="150%" style="margin-right: 10em;margin-top: -1.5em;">
     </div>
 
-    <img src="永續智能投資圖片/robot_judy.png" style="float: left; z-index: -100; margin-top: 2em;" width="5%">
+    <img src="永續智能投資圖片/Rachel.png" style="float: left; z-index: -100; margin-top: 2em;" width="5%">
 
     <div class="wrapper3">
         <h1 style="color: #38566A; margin-bottom: 15px; font-size: 15pt;">確認投資內容</h1>
@@ -308,11 +308,17 @@
         function confirm() {
             Swal.fire({
                 title: "申購前提醒",
-                text: "是否繼續申購?",
-                confirmButtonText: '繼 續',
+                html:
+                    '<p align="left">永續智能投資係為「指定營運範圍或方法單獨管理運用金錢信託投資國外有價證券信託」</p>' +
+                    '<p align="left">1.以信託方式由本行單獨設帳管理你所交付之資產，並於約定之範團内由本行為您提供投資建議。</p>' +
+                    '<p align="left">2.信託財產之管理用並非絕無險，本行不擔保信託財產投資之盈虧，亦不保證最低收益。</p>' +
+                    '<p align="left">3.永續智能投資屬於累積型產品，投資計畫若有配息將進到該計畫的現金部位，投資團隊會根據現金部位比例，再為您進行投資配置。</p>' +
+                    '<p align="left">是否繼續申購？</p>',
+                confirmButtonText: "繼續",
                 confirmButtonColor: "#C5B9AC",
-                cancelButtonText: '上一步',
+                cancelButtonText: "上一步",
                 cancelButtonColor: "#C5B9AC",
+                width: 650,
                 confirmButtonText: '繼 續',
                 confirmButtonColor: "#C5B9AC",
                 cancelButtonText: '上一步',
